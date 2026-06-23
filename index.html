@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Conesa | Productores Asesores de Seguros</title>
   <meta name="description"
-    content="Conesa Productores Asesores de Seguros. Asesoramiento profesional para seguros de auto, hogar, comercio, empresas y responsabilidad civil." />
+    content="Conesa Productores Asesores de Seguros. José María Conesa, Productor Asesor de Seguros, Matrícula SSN N.º 44982. Asesoramiento profesional en seguros." />
   <link rel="preconnect" href="https://images.unsplash.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
@@ -439,6 +439,62 @@
       z-index: 12
     }
 
+    .legalbar {
+      background: #eef3fb;
+      color: #071f49;
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 12px 22px;
+      text-align: center;
+      border-bottom: 1px solid #dce6f4
+    }
+
+    .legalbar a {
+      font-weight: 800;
+      color: #0d3f8f
+    }
+
+    .notice {
+      background: #fff;
+      border: 1px solid #dfe8f5;
+      border-left: 5px solid var(--oro);
+      padding: 18px 20px;
+      border-radius: 14px;
+      margin-top: 22px;
+      font-size: 13px;
+      color: #4d5c74;
+      line-height: 1.65
+    }
+
+    .notice strong {
+      color: var(--azul)
+    }
+
+    .legalcards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px
+    }
+
+    .legalcard {
+      background: #fff;
+      border: 1px solid #e5ebf5;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(7, 31, 73, .07)
+    }
+
+    .legalcard h4 {
+      color: var(--azul);
+      margin: 0 0 10px
+    }
+
+    .legalcard p {
+      color: #53627b;
+      line-height: 1.6;
+      font-size: 14px
+    }
+
     .copyright {
       text-align: center;
       border-top: 1px solid rgba(255, 255, 255, .16);
@@ -463,7 +519,8 @@
 
       .splitwrap,
       .contactwrap,
-      .foot {
+      .foot,
+      .legalcards {
         grid-template-columns: 1fr
       }
 
@@ -519,8 +576,11 @@
 </head>
 
 <body>
+  <div class="legalbar">Publicidad de Productor Asesor de Seguros. José María Conesa · Matrícula SSN N.º 44982.
+    Actividad regulada por la Superintendencia de Seguros de la Nación. <a href="https://www.argentina.gob.ar/ssn"
+      target="_blank" rel="noopener">www.argentina.gob.ar/ssn</a></div>
   <a class="wa" href="https://wa.me/543513943919?text=Hola%2C%20quiero%20asesoramiento%20sobre%20un%20seguro"
-    target="_blank" aria-label="WhatsApp">☘</a>
+    target="_blank" aria-label="WhatsApp">☎</a>
   <header class="top">
     <nav class="nav"><a class="brand" href="#">
         <div class="shield">C</div>
@@ -540,17 +600,18 @@
         <div class="hero-card">
           <div class="eyebrow">Asesoramiento profesional en seguros</div>
           <h2>Protegemos <span>lo que más valorás</span></h2>
-          <p>Seguros para tu auto, hogar, comercio, empresa y responsabilidad civil. Atención cercana, gestión rápida y
-            respaldo profesional.</p>
+          <p>Asesoramiento profesional en seguros para auto, hogar, comercio, empresa y responsabilidad civil. La
+            contratación, alcance y vigencia de las coberturas quedan sujetos a las condiciones de póliza de la
+            aseguradora interviniente.</p>
           <div class="checks">
             <div><b>✓</b>Atención personalizada</div>
-            <div><b>✓</b>Cotización rápida por WhatsApp</div>
-            <div><b>✓</b>Gestión integral de siniestros</div>
-            <div><b>✓</b>Coberturas a medida</div>
+            <div><b>✓</b>Orientación y cotización por WhatsApp</div>
+            <div><b>✓</b>Acompañamiento en gestión de siniestros</div>
+            <div><b>✓</b>Coberturas según condiciones de póliza</div>
           </div>
           <div class="btns"><a class="btn primary" href="#cotizar">Solicitar cotización</a><a class="btn secondary"
               href="https://wa.me/543513943919" target="_blank">Escribir por WhatsApp</a></div>
-          <div class="mat"><strong>José María Conesa</strong>Productor Asesor de Seguros<br><span>Matrícula N.º
+          <div class="mat"><strong>José María Conesa</strong>Productor Asesor de Seguros<br><span>Matrícula SSN N.º
               44982</span></div>
         </div>
       </div>
@@ -560,7 +621,7 @@
         <div class="title">
           <div class="eyebrow">Nuestros seguros</div>
           <h3>Coberturas pensadas para vos</h3>
-          <p>Soluciones simples, claras y adaptadas a cada necesidad.</p>
+          <p>Información clara y asesoramiento previo a la contratación.</p>
         </div>
         <div class="grid">
           <article class="card"><img
@@ -569,7 +630,7 @@
             <div class="in">
               <div class="icon">🚗</div>
               <h4>Seguro Automotor</h4>
-              <p>Coberturas para circular tranquilo, con asesoramiento antes y después de contratar.</p>
+              <p>Opciones de cobertura para vehículos. Alcances, límites, franquicias y exclusiones según póliza.</p>
             </div>
           </article>
           <article class="card"><img
@@ -578,7 +639,7 @@
             <div class="in">
               <div class="icon">🏠</div>
               <h4>Seguro de Hogar</h4>
-              <p>Protección para tu vivienda, tus bienes y tu familia ante imprevistos.</p>
+              <p>Coberturas para vivienda y bienes, sujetas a condiciones contractuales y suma asegurada.</p>
             </div>
           </article>
           <article class="card"><img
@@ -587,7 +648,8 @@
             <div class="in">
               <div class="icon">🏪</div>
               <h4>Seguro para Comercios</h4>
-              <p>Resguardá tu actividad frente a daños, robos y situaciones inesperadas.</p>
+              <p>Alternativas para actividades comerciales, según rubro, riesgo asegurable y condiciones de
+                contratación.</p>
             </div>
           </article>
           <article class="card"><img
@@ -596,7 +658,7 @@
             <div class="in">
               <div class="icon">💼</div>
               <h4>Seguros para Empresas</h4>
-              <p>Soluciones integrales para empresas, profesionales y actividades comerciales.</p>
+              <p>Asesoramiento para empresas y profesionales según actividad declarada y necesidades de cobertura.</p>
             </div>
           </article>
           <article class="card"><img
@@ -605,7 +667,7 @@
             <div class="in">
               <div class="icon">⚖️</div>
               <h4>Responsabilidad Civil</h4>
-              <p>Cobertura profesional para proteger tu patrimonio frente a reclamos de terceros.</p>
+              <p>Coberturas de responsabilidad civil sujetas a límites, exclusiones y condiciones de la póliza.</p>
             </div>
           </article>
         </div>
@@ -620,7 +682,7 @@
             <ul>
               <li>Atención humana y cercana.</li>
               <li>Asesoramiento profesional permanente.</li>
-              <li>Gestión integral de siniestros.</li>
+              <li>Acompañamiento en gestión de siniestros.</li>
               <li>Respuesta rápida por WhatsApp.</li>
             </ul>
           </div>
@@ -632,7 +694,9 @@
       <div class="container">
         <div class="title">
           <div class="eyebrow">Compañías</div>
-          <h3>Trabajamos con compañías líderes</h3>
+          <h3>Asesoramiento con aseguradoras autorizadas</h3>
+          <p>La disponibilidad de productos depende de la aseguradora, el riesgo asegurable y las condiciones vigentes
+            al momento de cotizar.</p>
         </div>
         <div class="logos">
           <div class="logochip">Federación Patronal</div>
@@ -641,6 +705,38 @@
           <div class="logochip">La Segunda</div>
           <div class="logochip">Zurich</div>
         </div>
+        <div class="notice"><strong>Aclaración publicitaria:</strong> la mención de aseguradoras tiene carácter
+          informativo. Esta página no garantiza aceptación del riesgo, emisión de póliza, precio final, beneficios,
+          indemnizaciones ni cobertura automática. Toda contratación queda sujeta a evaluación, condiciones generales y
+          particulares de póliza, exclusiones, límites, franquicias, suma asegurada y normativa aplicable.</div>
+      </div>
+    </section>
+
+    <section class="split" id="normativa">
+      <div class="container">
+        <div class="title">
+          <div class="eyebrow">Información obligatoria y transparencia</div>
+          <h3>Publicidad responsable conforme actividad PAS</h3>
+          <p>Datos identificatorios del Productor Asesor de Seguros y aclaraciones para una comunicación clara.</p>
+        </div>
+        <div class="legalcards">
+          <div class="legalcard">
+            <h4>Identificación profesional</h4>
+            <p><strong>José María Conesa</strong><br>Productor Asesor de Seguros<br>Matrícula SSN N.º 44982.</p>
+          </div>
+          <div class="legalcard">
+            <h4>Organismo de control</h4>
+            <p>Actividad regulada por la <strong>Superintendencia de Seguros de la Nación</strong>. Sitio oficial:
+              www.argentina.gob.ar/ssn.</p>
+          </div>
+          <div class="legalcard">
+            <h4>Alcance de la información</h4>
+            <p>La información publicada es orientativa y no reemplaza las condiciones contractuales de cada póliza.</p>
+          </div>
+        </div>
+        <div class="notice"><strong>Importante:</strong> no se consideran cubiertos riesgos ni prestaciones que no estén
+          expresamente contemplados en la póliza emitida por la aseguradora. Las coberturas, costos, sumas aseguradas,
+          exclusiones y vigencia se confirman únicamente con la propuesta/póliza correspondiente.</div>
       </div>
     </section>
     <section class="contact" id="cotizar">
@@ -648,7 +744,8 @@
         <div>
           <div class="eyebrow">Solicitá tu cotización</div>
           <h3>Estamos para asesorarte</h3>
-          <p>Completá tus datos y te contactamos para encontrar la cobertura que mejor se adapte a vos.</p>
+          <p>Completá tus datos y te contactamos para brindarte asesoramiento. La solicitud no implica contratación ni
+            cobertura vigente.</p>
           <p><strong>Tel:</strong> 351 3943919<br><strong>Mail:</strong>
             conesamarianelaseg@gmail.com<br><strong>Dirección:</strong> Ambrosio Funes 1280, Córdoba</p>
         </div>
@@ -661,8 +758,12 @@
             <option>Comercio</option>
             <option>Empresa</option>
             <option>Responsabilidad Civil</option>
-          </select><textarea name="Mensaje" placeholder="Mensaje"></textarea><button type="submit">QUIERO MI COTIZACIÓN
-            →</button></form>
+          </select><textarea name="Mensaje" placeholder="Mensaje"></textarea><button type="submit">SOLICITAR
+            ASESORAMIENTO →</button>
+          <div class="notice" style="background:#0b2b61;color:#dbe8ff;border-color:#c7a35c;margin-top:14px">Al enviar el
+            formulario solicitás contacto comercial. La cobertura solo tendrá vigencia una vez aceptada por la
+            aseguradora y emitida la póliza correspondiente.</div>
+        </form>
       </div>
     </section>
   </main>
@@ -671,9 +772,9 @@
       <div>
         <h3>Conesa</h3>
         <p>Productores Asesores de Seguros</p>
-        <p><span class="gold">José María Conesa</span><br>Productor Asesor de Seguros<br>Matrícula N.º 44982</p>
-        <p><span class="gold">Liliana Adriana Moro</span><br>Productor Asesor de Seguros<br>Matrícula N.º 58790</p>
-        <p><span class="gold">Marianela Conesa</span><br>Productor Asesor de Seguros<br>Matrícula N.º 79699</p>
+        <p><span class="gold">José María Conesa</span><br>Productor Asesor de Seguros<br>Matrícula SSN N.º 44982</p>
+        <p><span class="gold">Liliana Adriana Moro</span><br>Productor Asesor de Seguros<br>Matrícula SSN N.º 58790</p>
+        <p><span class="gold">Marianela Conesa</span><br>Productor Asesor de Seguros<br>Matrícula SSN N.º 79699</p>
       </div>
       <div>
         <h4>Contacto</h4>
@@ -681,10 +782,13 @@
       </div>
       <div>
         <h4>Tu tranquilidad</h4>
-        <p class="gold">es nuestra compañía.</p>
+        <p class="gold">asesoramiento claro y responsable.</p>
+        <p style="font-size:13px;color:#b7c3d8">Publicidad de Productor Asesor de Seguros. Información orientativa
+          sujeta a condiciones de póliza.</p>
       </div>
     </div>
-    <div class="copyright">© 2026 Conesa Productores Asesores de Seguros. Todos los derechos reservados.</div>
+    <div class="copyright">© 2026 Conesa Productores Asesores de Seguros. Publicidad de Productor Asesor de Seguros.
+      Todos los derechos reservados.</div>
   </footer>
 </body>
 
