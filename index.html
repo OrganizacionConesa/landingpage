@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Conesa | Productores Asesores de Seguros</title>
+  <meta name="description"
+    content="Conesa Productores Asesores de Seguros. Asesoramiento profesional para seguros de auto, hogar, comercio, empresas y responsabilidad civil." />
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --azul: #071f49;
+      --azul2: #0d3f8f;
+      --oro: #c7a35c;
+      --gris: #f4f7fb;
+      --texto: #14213d;
+      --blanco: #fff;
+      --sombra: 0 16px 45px rgba(7, 31, 73, .12)
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--texto);
+      background: #fff
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    .top {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, .06)
+    }
+
+    .nav {
+      max-width: 1180px;
+      margin: auto;
+      padding: 16px 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px
+    }
+
+    .shield {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(145deg, var(--azul), var(--azul2));
+      color: var(--oro);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      font-size: 26px;
+      box-shadow: var(--sombra)
+    }
+
+    .brand h1 {
+      font-family: Playfair Display, serif;
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: .5px;
+      color: var(--azul)
+    }
+
+    .brand p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 13px
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 24px;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--azul)
+    }
+
+    .phone {
+      background: var(--azul);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 12px;
+      font-weight: 800
+    }
+
+    .hero {
+      min-height: 720px;
+      background: linear-gradient(90deg, rgba(255, 255, 255, .96) 0%, rgba(255, 255, 255, .88) 42%, rgba(255, 255, 255, .18) 68%), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1800&q=85') center/cover;
+      display: flex;
+      align-items: center
+    }
+
+    .hero .wrap {
+      max-width: 1180px;
+      margin: auto;
+      padding: 70px 22px;
+      width: 100%
+    }
+
+    .hero-card {
+      max-width: 620px
+    }
+
+    .eyebrow {
+      color: var(--oro);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 13px
+    }
+
+    .hero h2 {
+      font-family: Playfair Display, serif;
+      font-size: 66px;
+      line-height: 1.02;
+      margin: 12px 0;
+      color: var(--azul)
+    }
+
+    .hero h2 span {
+      color: var(--oro)
+    }
+
+    .hero p {
+      font-size: 20px;
+      line-height: 1.6
+    }
+
+    .checks {
+      display: grid;
+      gap: 14px;
+      margin: 28px 0
+    }
+
+    .checks div {
+      font-weight: 700
+    }
+
+    .checks b {
+      background: var(--azul2);
+      color: #fff;
+      border-radius: 50%;
+      padding: 4px 7px;
+      margin-right: 10px
+    }
+
+    .btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 24px;
+      border-radius: 13px;
+      font-weight: 900
+    }
+
+    .primary {
+      background: var(--azul2);
+      color: #fff
+    }
+
+    .secondary {
+      background: #fff;
+      color: var(--azul);
+      box-shadow: var(--sombra)
+    }
+
+    .mat {
+      margin-top: 26px;
+      background: var(--azul);
+      color: #fff;
+      border-left: 6px solid var(--oro);
+      padding: 18px 22px;
+      border-radius: 14px;
+      max-width: 430px
+    }
+
+    .mat strong {
+      display: block;
+      font-size: 20px
+    }
+
+    .mat span {
+      color: #f3d999;
+      font-weight: 800
+    }
+
+    section {
+      padding: 78px 22px
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: auto
+    }
+
+    .title {
+      text-align: center;
+      margin-bottom: 42px
+    }
+
+    .title h3 {
+      font-family: Playfair Display, serif;
+      font-size: 42px;
+      margin: 8px 0;
+      color: var(--azul)
+    }
+
+    .title p {
+      margin: 0;
+      color: #5d6b83
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 22px
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: var(--sombra);
+      overflow: hidden;
+      border: 1px solid #e9edf5
+    }
+
+    .card img {
+      height: 165px;
+      width: 100%;
+      object-fit: cover
+    }
+
+    .card .in {
+      padding: 22px
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 15px;
+      background: var(--azul2);
+      color: #fff;
+      display: grid;
+      place-items: center;
+      margin-top: -47px;
+      position: relative;
+      font-size: 23px
+    }
+
+    .card h4 {
+      margin: 16px 0 8px;
+      color: var(--azul);
+      font-size: 18px
+    }
+
+    .card p {
+      font-size: 14px;
+      line-height: 1.55;
+      color: #53627b
+    }
+
+    .split {
+      background: var(--gris)
+    }
+
+    .splitwrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border-radius: 28px;
+      overflow: hidden;
+      box-shadow: var(--sombra);
+      background: #fff
+    }
+
+    .splittext {
+      background: var(--azul);
+      color: #fff;
+      padding: 60px
+    }
+
+    .splittext h3 {
+      font-family: Playfair Display, serif;
+      font-size: 42px;
+      margin: 8px 0
+    }
+
+    .splittext li {
+      margin: 18px 0;
+      font-weight: 700
+    }
+
+    .splitimg {
+      background: url('https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1100&q=85') center/cover;
+      min-height: 420px
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap
+    }
+
+    .logochip {
+      padding: 18px 24px;
+      border-radius: 14px;
+      border: 1px solid #e4e9f3;
+      background: #fff;
+      font-weight: 900;
+      color: var(--azul);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, .05)
+    }
+
+    .contact {
+      background: linear-gradient(90deg, rgba(255, 255, 255, .96), rgba(255, 255, 255, .84)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1600&q=85') center/cover
+    }
+
+    .contactwrap {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 32px;
+      align-items: center
+    }
+
+    .form {
+      background: var(--azul);
+      padding: 30px;
+      border-radius: 24px;
+      box-shadow: var(--sombra)
+    }
+
+    .form input,
+    .form select,
+    .form textarea {
+      width: 100%;
+      padding: 16px;
+      margin: 8px 0;
+      border: 0;
+      border-radius: 11px;
+      font-family: inherit
+    }
+
+    .form textarea {
+      height: 115px
+    }
+
+    .form button {
+      width: 100%;
+      border: 0;
+      background: var(--oro);
+      color: #fff;
+      padding: 17px;
+      border-radius: 12px;
+      font-weight: 900;
+      font-size: 16px;
+      margin-top: 8px;
+      cursor: pointer
+    }
+
+    .contact h3 {
+      font-family: Playfair Display, serif;
+      font-size: 44px;
+      color: var(--azul);
+      margin: 0 0 16px
+    }
+
+    .footer {
+      background: var(--azul);
+      color: #fff;
+      padding: 45px 22px
+    }
+
+    .foot {
+      max-width: 1180px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 28px
+    }
+
+    .foot h3 {
+      font-family: Playfair Display, serif;
+      font-size: 34px;
+      margin: 0
+    }
+
+    .gold {
+      color: var(--oro)
+    }
+
+    .wa {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      background: #20c65a;
+      color: #fff;
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 34px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .24);
+      z-index: 12
+    }
+
+    .copyright {
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, .16);
+      margin-top: 30px;
+      padding-top: 20px;
+      color: #b7c3d8;
+      font-size: 13px
+    }
+
+    @media(max-width:950px) {
+      .navlinks {
+        display: none
+      }
+
+      .hero h2 {
+        font-size: 46px
+      }
+
+      .grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .splitwrap,
+      .contactwrap,
+      .foot {
+        grid-template-columns: 1fr
+      }
+
+      .splittext {
+        padding: 36px
+      }
+
+      .hero {
+        min-height: auto
+      }
+
+      .card img {
+        height: 190px
+      }
+    }
+
+    @media(max-width:560px) {
+      .brand h1 {
+        font-size: 26px
+      }
+
+      .phone {
+        display: none
+      }
+
+      .hero h2 {
+        font-size: 38px
+      }
+
+      .grid {
+        grid-template-columns: 1fr
+      }
+
+      section {
+        padding: 52px 18px
+      }
+
+      .hero .wrap {
+        padding: 55px 18px
+      }
+
+      .title h3,
+      .splittext h3,
+      .contact h3 {
+        font-size: 34px
+      }
+
+      .btn {
+        width: 100%
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="wa" href="https://wa.me/543513943919?text=Hola%2C%20quiero%20asesoramiento%20sobre%20un%20seguro"
+    target="_blank" aria-label="WhatsApp">☘</a>
+  <header class="top">
+    <nav class="nav"><a class="brand" href="#">
+        <div class="shield">C</div>
+        <div>
+          <h1>Conesa</h1>
+          <p>Productores Asesores de Seguros</p>
+        </div>
+      </a>
+      <div class="navlinks"><a href="#seguros">Seguros</a><a href="#nosotros">Nosotros</a><a
+          href="#cotizar">Cotizar</a><a href="#contacto">Contacto</a></div><a class="phone" href="tel:3513943919">351
+        3943919</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-card">
+          <div class="eyebrow">Asesoramiento profesional en seguros</div>
+          <h2>Protegemos <span>lo que más valorás</span></h2>
+          <p>Seguros para tu auto, hogar, comercio, empresa y responsabilidad civil. Atención cercana, gestión rápida y
+            respaldo profesional.</p>
+          <div class="checks">
+            <div><b>✓</b>Atención personalizada</div>
+            <div><b>✓</b>Cotización rápida por WhatsApp</div>
+            <div><b>✓</b>Gestión integral de siniestros</div>
+            <div><b>✓</b>Coberturas a medida</div>
+          </div>
+          <div class="btns"><a class="btn primary" href="#cotizar">Solicitar cotización</a><a class="btn secondary"
+              href="https://wa.me/543513943919" target="_blank">Escribir por WhatsApp</a></div>
+          <div class="mat"><strong>José María Conesa</strong>Productor Asesor de Seguros<br><span>Matrícula N.º
+              44982</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="seguros">
+      <div class="container">
+        <div class="title">
+          <div class="eyebrow">Nuestros seguros</div>
+          <h3>Coberturas pensadas para vos</h3>
+          <p>Soluciones simples, claras y adaptadas a cada necesidad.</p>
+        </div>
+        <div class="grid">
+          <article class="card"><img
+              src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=700&q=80"
+              alt="Seguro automotor">
+            <div class="in">
+              <div class="icon">🚗</div>
+              <h4>Seguro Automotor</h4>
+              <p>Coberturas para circular tranquilo, con asesoramiento antes y después de contratar.</p>
+            </div>
+          </article>
+          <article class="card"><img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80"
+              alt="Seguro de hogar">
+            <div class="in">
+              <div class="icon">🏠</div>
+              <h4>Seguro de Hogar</h4>
+              <p>Protección para tu vivienda, tus bienes y tu familia ante imprevistos.</p>
+            </div>
+          </article>
+          <article class="card"><img
+              src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=700&q=80"
+              alt="Comercio">
+            <div class="in">
+              <div class="icon">🏪</div>
+              <h4>Seguro para Comercios</h4>
+              <p>Resguardá tu actividad frente a daños, robos y situaciones inesperadas.</p>
+            </div>
+          </article>
+          <article class="card"><img
+              src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80"
+              alt="Empresas">
+            <div class="in">
+              <div class="icon">💼</div>
+              <h4>Seguros para Empresas</h4>
+              <p>Soluciones integrales para empresas, profesionales y actividades comerciales.</p>
+            </div>
+          </article>
+          <article class="card"><img
+              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=700&q=80"
+              alt="Responsabilidad civil">
+            <div class="in">
+              <div class="icon">⚖️</div>
+              <h4>Responsabilidad Civil</h4>
+              <p>Cobertura profesional para proteger tu patrimonio frente a reclamos de terceros.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="split" id="nosotros">
+      <div class="container">
+        <div class="splitwrap">
+          <div class="splittext">
+            <div class="eyebrow">Por qué elegirnos</div>
+            <h3>Más de 15 años acompañando a nuestros clientes</h3>
+            <ul>
+              <li>Atención humana y cercana.</li>
+              <li>Asesoramiento profesional permanente.</li>
+              <li>Gestión integral de siniestros.</li>
+              <li>Respuesta rápida por WhatsApp.</li>
+            </ul>
+          </div>
+          <div class="splitimg" role="img" aria-label="Asesoramiento personalizado"></div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="title">
+          <div class="eyebrow">Compañías</div>
+          <h3>Trabajamos con compañías líderes</h3>
+        </div>
+        <div class="logos">
+          <div class="logochip">Federación Patronal</div>
+          <div class="logochip">Sancor Seguros</div>
+          <div class="logochip">San Cristóbal</div>
+          <div class="logochip">La Segunda</div>
+          <div class="logochip">Zurich</div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="cotizar">
+      <div class="container contactwrap">
+        <div>
+          <div class="eyebrow">Solicitá tu cotización</div>
+          <h3>Estamos para asesorarte</h3>
+          <p>Completá tus datos y te contactamos para encontrar la cobertura que mejor se adapte a vos.</p>
+          <p><strong>Tel:</strong> 351 3943919<br><strong>Mail:</strong>
+            conesamarianelaseg@gmail.com<br><strong>Dirección:</strong> Ambrosio Funes 1280, Córdoba</p>
+        </div>
+        <form class="form" action="mailto:conesamarianelaseg@gmail.com" method="post" enctype="text/plain"><input
+            name="Nombre" placeholder="Nombre y apellido" required><input name="Telefono" placeholder="Teléfono"
+            required><input name="Email" type="email" placeholder="Email"><select name="Tipo de seguro">
+            <option>Tipo de seguro</option>
+            <option>Automotor</option>
+            <option>Hogar</option>
+            <option>Comercio</option>
+            <option>Empresa</option>
+            <option>Responsabilidad Civil</option>
+          </select><textarea name="Mensaje" placeholder="Mensaje"></textarea><button type="submit">QUIERO MI COTIZACIÓN
+            →</button></form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="contacto">
+    <div class="foot">
+      <div>
+        <h3>Conesa</h3>
+        <p>Productores Asesores de Seguros</p>
+        <p><span class="gold">José María Conesa</span><br>Productor Asesor de Seguros<br>Matrícula N.º 44982</p>
+        <p><span class="gold">Liliana Adriana Moro</span><br>Productor Asesor de Seguros<br>Matrícula N.º 58790</p>
+        <p><span class="gold">Marianela Conesa</span><br>Productor Asesor de Seguros<br>Matrícula N.º 79699</p>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <p>📞 351 3943919 / 📞 351 3943920<br>✉️ conesamarianelaseg@gmail.com<br>📍 Ambrosio Funes 1280 - B° San Vicente<br>Córdoba, Argentina</p>
+      </div>
+      <div>
+        <h4>Tu tranquilidad</h4>
+        <p class="gold">es nuestra compañía.</p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 Conesa Productores Asesores de Seguros. Todos los derechos reservados.</div>
+  </footer>
+</body>
+
+</html>
